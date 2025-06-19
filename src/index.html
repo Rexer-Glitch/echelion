@@ -10,25 +10,22 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="nav-container">
-          <div class="nav-logo">
-            <a href="#home">Echelon</a>
-          </div>
-          <div class="nav-menu">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#testimonials" class="nav-link">Testimonials</a>
-            <a href="#contact" class="nav-link">Contact</a>
-          </div>
-          <div class="nav-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar">
+          <div class="logo">Echelon</div>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <div class="hamburger-bars">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+      </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -40,7 +37,7 @@
       </p>
 
     
-        <button onclick="scrollToSection('contact')">
+        <button class="consultBtn" onclick="scrollToSection('contact')">
           Book Your Free Consultation
         </button>
       
@@ -48,15 +45,15 @@
 
     <!-- Services Section -->
     <section id="about" class="section">
-      <h2>About Echelion International School</h2>
+      <h2>About Echelon International</h2>
       
-      <p><b style="font-size: 2rem;">A</b>t <span style="text-decoration: underline;">Echelon International Education</span>, we believe every student has the potential to make a global impact. For over a decade, we have been passionately dedicated to turning dreams of international education into reality. Our experienced counselors, all with extensive knowledge of global academic landscapes, have successfully guided thousands of students toward prestigious universities across the world, boasting an impressive <span style="color: rgb(206, 96, 96); font-size: 1.5rem;">95%</span> acceptance rate.</p>
-      <p>We pride ourselves on personalized attention, ensuring each student's unique aspirations and strengths are matched with the perfect university. From comprehensive admission support to detailed visa guidance, our mission is to eliminate the stress from the application journey, allowing students to confidently embrace their future abroad. With Echelon, your global educational journey starts with expert guidance and ends with assured success.</p>
+      <p><b style="font-size: 2rem;">A</b>t <span style="text-decoration: underline;">Echelon International</span>, we aim to provide you with a transparent, simple and hassle free application process. Whether you are going to your very first university, pursuing your masters, phD or even just taking a gap year to figure things out, Echelon has you covered.</p>
+      <p> We believe that education is priceless so we partner with the best schools to offers you just that. Our full-service experience includes application process & follow ups, scholarship matching, interview arrangements, flight booking, China arrival briefings as well as arrange pick ups for your respective schools.</p>
       <h3>Key differentiators:</h3>
       <ul>
         <li><i class="fa-solid fa-user"></i> Personalized counseling</li>
         <li><i class="fa-solid fa-list-check"></i> Comprehensive admission support</li>
-        <li><i class="fa-solid fa-globe"></i> Global university network</li>
+        <li><i class="fa-solid fa-dollar"></i> Up to 100% tuition coverage</li>
         <li><i class="fa-solid fa-passport"></i> Visa and scholarship assistance</li>
       </ul>
       
@@ -87,7 +84,7 @@
       
         <div class="service-item">
           <i class="fa-solid fa-medal fa-2x"></i>
-          <h3>Scholarship Assistance</h3>
+          <h3>Scholarship Matching</h3>
           <p>Proven strategies to secure scholarships and financial aid.</p>
         </div>
       </div>
@@ -128,7 +125,32 @@
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Echelon International Education. All rights reserved.</p>
+      
+      <div class="footer-content">
+        <div class="footer-section contact">
+          <h4>Contact Us</h4>
+          <p>Email: Echeloninternationaledu@gmail.com</p>
+          <p>Phone: +86 137 3206 0600</p>
+        </div>
+        <div class="footer-section links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Detailed Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h4>Follow Us</h4>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Echelon International Education. All rights reserved.</p>
+      </div>
     </footer>
     <script src="./app.js" defer></script>
   </body>
