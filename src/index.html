@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <title>Echelion International Education</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a href="#home">Echelon</a>
+          </div>
+          <div class="nav-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+          <div class="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+      <h1>Unlock Your <span style="background-color: #2f4f8b; color: white; padding: 5px; border-radius: 5px;">Global Potential</span> with Echelon</h1>
+      <p>
+        Personalized academic guidance and pathways to your dream university
+        abroad.
+      </p>
+
+    
+        <button onclick="scrollToSection('contact')">
+          Book Your Free Consultation
+        </button>
+      
+    </section>
+
+    <!-- Services Section -->
+    <section id="about" class="section">
+      <h2>About Echelion International School</h2>
+      
+      <p><b style="font-size: 2rem;">A</b>t <span style="text-decoration: underline;">Echelon International Education</span>, we believe every student has the potential to make a global impact. For over a decade, we have been passionately dedicated to turning dreams of international education into reality. Our experienced counselors, all with extensive knowledge of global academic landscapes, have successfully guided thousands of students toward prestigious universities across the world, boasting an impressive <span style="color: rgb(206, 96, 96); font-size: 1.5rem;">95%</span> acceptance rate.</p>
+      <p>We pride ourselves on personalized attention, ensuring each student's unique aspirations and strengths are matched with the perfect university. From comprehensive admission support to detailed visa guidance, our mission is to eliminate the stress from the application journey, allowing students to confidently embrace their future abroad. With Echelon, your global educational journey starts with expert guidance and ends with assured success.</p>
+      <h3>Key differentiators:</h3>
+      <ul>
+        <li><i class="fa-solid fa-user"></i> Personalized counseling</li>
+        <li><i class="fa-solid fa-list-check"></i> Comprehensive admission support</li>
+        <li><i class="fa-solid fa-globe"></i> Global university network</li>
+        <li><i class="fa-solid fa-passport"></i> Visa and scholarship assistance</li>
+      </ul>
+      
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service-item">
+          <i class="fa-solid fa-graduation-cap fa-2x"></i>
+          <h3>Admissions Counseling</h3>
+          <p>Personalized guidance to choose ideal universities and courses.</p>
+        </div>
+      
+        <div class="service-item">
+          <i class="fa-solid fa-file-lines fa-2x"></i>
+          <h3>Application Assistance</h3>
+          <p>Complete support in preparing compelling applications and essays.</p>
+        </div>
+    
+      
+        <div class="service-item">
+          <i class="fa-solid fa-passport fa-2x"></i>
+          <h3>Visa Guidance</h3>
+          <p>Simplified and stress-free visa application processes.</p>
+        </div>
+      
+        <div class="service-item">
+          <i class="fa-solid fa-medal fa-2x"></i>
+          <h3>Scholarship Assistance</h3>
+          <p>Proven strategies to secure scholarships and financial aid.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+      <h2>Testimonials</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial active">
+          <p>"Echelon transformed my admission experience. Their dedicated support secured my place at a top university."</p>
+          <cite>– Sarah K., University of Toronto</cite>
+        </div>
+        <div class="testimonial">
+          <p>"From test prep to visa guidance, they supported me at every step! Highly recommended."</p>
+          <cite>– Raj P., University of Sydney</cite>
+        </div>
+        <div class="testimonial">
+          <p>"I got into my dream school with a scholarship, thanks to the Echelon team!"</p>
+          <cite>– Amina L., University of British Columbia</cite>
+        </div>
+        <button id="prev">❮</button>
+        <button id="next">❯</button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Ready to apply?</h2>
+      <h3>Contact Us</h3>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Echelon International Education. All rights reserved.</p>
+    </footer>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
