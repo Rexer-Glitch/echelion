@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    line-height: 1.6;
-    color: #333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
 
-    position: relative;
+  position: relative;
 }
 
 .navbar {
@@ -98,15 +97,18 @@ body {
 .section {
   padding: 100px 20px;
   text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
 }
 
-
+.section:nth-of-type(even) {
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
 
 #hero {
-  background-image: url('https://strongstart.org/wp-content/uploads/2023/04/iStock-1390975349-scaled.jpg');
+  background-image: url("https://strongstart.org/wp-content/uploads/2023/04/iStock-1390975349-scaled.jpg");
   background-size: cover;
   background-position: center;
-  
+
   background-color: #222;
   color: white;
   padding: 100px 0;
@@ -119,15 +121,14 @@ body {
   justify-content: center;
 }
 
-
 #hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -141,7 +142,6 @@ body {
   margin-bottom: 20px;
 }
 
-
 #hero p {
   font-size: 1.3rem;
   margin: 60px;
@@ -149,7 +149,7 @@ body {
   max-width: 450px;
 }
 #hero button {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 15px 25px;
@@ -159,10 +159,8 @@ body {
   border-radius: 5px;
 }
 
-
 #about {
-  background-color: #1e2431;
-  color: white;
+  color: black;
 
   display: flex;
   flex-direction: column;
@@ -171,14 +169,14 @@ body {
 }
 
 #about h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 50px;
 }
 #about p {
   font-size: 1.1rem;
   line-height: 1.6;
 
-  text-align:justify;
+  text-align: justify;
 
   max-width: 800px;
 }
@@ -200,23 +198,25 @@ body {
   margin-bottom: 10px;
 }
 
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
   color: #1581f5;
 }
 
-
-button:hover, input[type="submit"]:hover {
+button:hover,
+input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-#services {
-  background-color: #4e2a2a;
+/* #services {
   padding: 100px 0;
 }
 #services h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 50px;
+  color: #2f8ff5;
 }
 
 .services-container {
@@ -233,7 +233,7 @@ button:hover, input[type="submit"]:hover {
   border-radius: 10px;
   padding: 50px 10px;
   text-align: center;
-  flex: 1 1 100%; 
+  flex: 1 1 100%;
   max-width: 400px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -244,7 +244,7 @@ button:hover, input[type="submit"]:hover {
 }
 
 .service-item i {
-  color: #007BFF;
+  color: #007bff;
   margin-bottom: 10px;
 }
 
@@ -252,12 +252,131 @@ button:hover, input[type="submit"]:hover {
   .service-item {
     flex: 1 1 calc(50% - 20px);
   }
+} */
+
+
+.pricing-section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.pricing-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.pricing-toggle button {
+  padding: 10px 25px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.pricing-toggle button.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  padding: 30px 25px;
+  max-width: 320px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.highlight {
+  border: 2px solid #2d6cdf;
+}
+
+.price {
+  font-size: 2rem;
+  color: #111;
+  margin: 10px 0;
+}
+
+.billing {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.cta-button {
+  display: block;
+  text-align: center;
+  background: #2d6cdf;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#testimonials {
+  padding: 50px 20px;
+}
+
+#testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
 .testimonial {
   font-style: italic;
   margin: 100px auto;
-  max-width: 600px;
 }
 
 .testimonial-carousel {
@@ -266,6 +385,7 @@ button:hover, input[type="submit"]:hover {
   margin: 0 auto;
   text-align: center;
   padding: 40px 20px;
+  max-height: 500px;
 }
 
 .testimonial {
@@ -281,7 +401,7 @@ button:hover, input[type="submit"]:hover {
 .testimonial cite {
   display: block;
   margin-top: 10px;
-  color: #007BFF;
+  color: #007bff;
   font-weight: bold;
 }
 
@@ -293,7 +413,7 @@ button:hover, input[type="submit"]:hover {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #007BFF;
+  color: #007bff;
 }
 
 #prev {
@@ -304,16 +424,142 @@ button:hover, input[type="submit"]:hover {
   right: 10px;
 }
 
+.faq-page {
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faq-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto 40px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+}
+
+.faq-list {
+  text-align: left;
+}
+
+.faq-item {
+
+  max-width: 700px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #555;
+  display: none;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item .icon {
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .icon {
+  transform: rotate(45deg);
+}
+
+/* Bottom Section */
+.footer-contact {
+  margin-top: 60px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-contact .avatars {
+  margin-bottom: 10px;
+}
+
+.footer-contact img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 4px;
+  object-fit: cover;
+}
+
+.footer-contact h4 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.footer-contact p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+
+
+.faq-more {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.faq-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.faq-more-btn:hover {
+  background-color: #0056b3;
+}
+
 #contact {
   background-color: black;
   padding: 100px 0;
+  min-height: 80vh;
 }
 
 #contact h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: rgb(175, 102, 102);
-} 
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
 
 #contact h3 {
   font-size: 1.2rem;
@@ -332,15 +578,15 @@ form label {
   margin-bottom: 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-
 }
 
 form button {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -351,13 +597,211 @@ form button:hover {
   background-color: #0056b3;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   margin-bottom: 20px;
 }
 
 #contact p {
   margin-top: 20px;
 }
+
+/* Divider */
+.c-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0 20px;
+}
+
+.c-divider span {
+  font-weight: bold;
+  color: #666;
+  font-size: 2rem;
+}
+
+/* Operating Hours */
+.hours-info {
+  margin-bottom: 30px;
+}
+
+.hours-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.hours-info ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.hours-info li {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.whatsapp-contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.whatsapp-contact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.whatsapp-cards-flex {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+/* Individual Profile Card */
+.whatsapp-profile-card {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  padding-inline: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  max-width: 280px;
+  text-align: center;
+  margin: 50px auto;
+  transition: transform 0.3s ease;
+}
+
+
+.whatsapp-profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.whatsapp-btn.disabled {
+  background-color: #ccc !important;
+  cursor: not-allowed;
+}
+
+
+.profile-img {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 15px;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  background: #25d366;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.whatsapp-profile-card h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.whatsapp-profile-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background: #268b4b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #259c52;
+}
+
+.profile-img {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  z-index: 10;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 220px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  transition: opacity 0.3s ease;
+}
+
+.tooltip-wrapper:hover .custom-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .whatsapp-cards-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 footer {
   background-color: #222;
@@ -402,7 +846,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #6FB2FF;
+  color: #6fb2ff;
 }
 
 .footer-section a i {
@@ -427,14 +871,68 @@ footer {
   text-align: end;
 }
 
+
+.final-section, .first-section {
+  position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.first-section::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at top left, rgba(0, 123, 255, 0.25), transparent 70%);
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: 0;
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+
+.final-section::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at bottom right, rgba(0, 123, 255, 0.25), transparent 70%);
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: 0;
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #eee;
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.9; }
+}
+
 @media screen and (min-width: 768px) {
   .footer-content {
     padding: 20px 100px;
   }
-  
 }
 @media screen and (max-width: 768px) {
-  .footer-content .contact, .footer-content .social {
+  .footer-content .contact,
+  .footer-content .social {
     text-align: center;
+  }
+
+  .divider {
+    max-width: 60%;
   }
 }

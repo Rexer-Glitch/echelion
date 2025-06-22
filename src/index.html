@@ -1,66 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 
-    <title>Echelion International Education</title>
-  </head>
-  <body>
-    <header>
-        <nav class="navbar">
-          <div class="logo">Echelon</div>
-          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-            <div class="hamburger-bars">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+  <title>Echelion International Education</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Echelon</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <div class="hamburger-bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </button>
-          <ul class="nav-links" id="navLinks">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="section">
-      <h1>Unlock Your <span style="background-color: #2f4f8b; color: white; padding: 5px; border-radius: 5px;">Global Potential</span> with Echelon</h1>
-      <p>
-        Personalized academic guidance and pathways to your dream university
-        abroad.
-      </p>
-
-    
-        <button class="consultBtn" onclick="scrollToSection('contact')">
-          Book Your Free Consultation
-        </button>
-      
-    </section>
-
-    <!-- Services Section -->
-    <section id="about" class="section">
-      <h2>About Echelon International</h2>
-      
-      <p><b style="font-size: 2rem;">A</b>t <span style="text-decoration: underline;">Echelon International</span>, we aim to provide you with a transparent, simple and hassle free application process. Whether you are going to your very first university, pursuing your masters, phD or even just taking a gap year to figure things out, Echelon has you covered.</p>
-      <p> We believe that education is priceless so we partner with the best schools to offers you just that. Our full-service experience includes application process & follow ups, scholarship matching, interview arrangements, flight booking, China arrival briefings as well as arrange pick ups for your respective schools.</p>
-      <h3>Key differentiators:</h3>
-      <ul>
-        <li><i class="fa-solid fa-user"></i> Personalized counseling</li>
-        <li><i class="fa-solid fa-list-check"></i> Comprehensive admission support</li>
-        <li><i class="fa-solid fa-dollar"></i> Up to 100% tuition coverage</li>
-        <li><i class="fa-solid fa-passport"></i> Visa and scholarship assistance</li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      
-    </section>
+    </nav>
+  </header>
 
-    <!-- Services Section -->
-    <section id="services" class="section">
+
+  <section id="hero" class="section">
+    <h1>
+      Unlock Your
+      <span style="
+            background-color: #2f4f8b;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+          ">Global Potential</span>
+      with Echelon
+    </h1>
+    <p>
+      Personalized academic guidance and pathways to your dream university
+      abroad.
+    </p>
+
+    <button class="consultBtn" onclick="scrollToSection('contact')">
+      Book Your Free Consultation
+    </button>
+  </section>
+
+  <section id="about" class="section first-section">
+    <h2>About Echelon International</h2>
+
+    <p>
+      <b style="font-size: 2rem">A</b>t
+      <span style="text-decoration: underline">Echelon International</span>,
+      we aim to provide you with a transparent, simple and hassle free
+      application process. Whether you are going to your very first
+      university, pursuing your masters, phD or even just taking a gap year to
+      figure things out, Echelon has you covered.
+    </p>
+    <p>
+      We believe that education is priceless so we partner with the best
+      schools to offers you just that. Our full-service experience includes
+      application process & follow ups, scholarship matching, interview
+      arrangements, flight booking, China arrival briefings as well as arrange
+      pick ups for your respective schools.
+    </p>
+    <h3>Key differentiators:</h3>
+    <ul>
+      <li><i class="fa-solid fa-user"></i> Personalized counseling</li>
+      <li>
+        <i class="fa-solid fa-list-check"></i> Comprehensive admission support
+      </li>
+      <li><i class="fa-solid fa-dollar"></i> Up to 100% tuition coverage</li>
+      <li>
+        <i class="fa-solid fa-passport"></i> Visa and scholarship assistance
+      </li>
+    </ul>
+
+    <div class="faq-more"></div>
+    <a href="./about.html" class="faq-more-btn">Learn more</a>
+    </div>
+  </section>
+  <hr class="divider" />
+  <!-- <section id="services" class="section">
       <h2>Our Services</h2>
       <div class="services-container">
         <div class="service-item">
@@ -68,90 +101,260 @@
           <h3>Admissions Counseling</h3>
           <p>Personalized guidance to choose ideal universities and courses.</p>
         </div>
-      
+
         <div class="service-item">
           <i class="fa-solid fa-file-lines fa-2x"></i>
           <h3>Application Assistance</h3>
-          <p>Complete support in preparing compelling applications and essays.</p>
+          <p>
+            Complete support in preparing compelling applications and essays.
+          </p>
         </div>
-    
-      
+
         <div class="service-item">
           <i class="fa-solid fa-passport fa-2x"></i>
           <h3>Visa Guidance</h3>
           <p>Simplified and stress-free visa application processes.</p>
         </div>
-      
+
         <div class="service-item">
           <i class="fa-solid fa-medal fa-2x"></i>
           <h3>Scholarship Matching</h3>
           <p>Proven strategies to secure scholarships and financial aid.</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section">
-      <h2>Testimonials</h2>
-      <div class="testimonial-carousel">
-        <div class="testimonial active">
-          <p>"Echelon transformed my admission experience. Their dedicated support secured my place at a top university."</p>
-          <cite>– Sarah K., University of Toronto</cite>
-        </div>
-        <div class="testimonial">
-          <p>"From test prep to visa guidance, they supported me at every step! Highly recommended."</p>
-          <cite>– Raj P., University of Sydney</cite>
-        </div>
-        <div class="testimonial">
-          <p>"I got into my dream school with a scholarship, thanks to the Echelon team!"</p>
-          <cite>– Amina L., University of British Columbia</cite>
-        </div>
-        <button id="prev">❮</button>
-        <button id="next">❯</button>
-      </div>
-    </section>
+  <section id="services" class="section pricing-section">
+    <h2 class="section-title">Application Options</h2>
+    <p class="section-subtitle">Choose your preferred route to apply for Chinese universities.</p>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2>Ready to apply?</h2>
-      <h3>Contact Us</h3>
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+    <div class="pricing-toggle">
+      <button class="active">Self-Sponsoring</button>
+      <button>Scholarship Application</button>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-      
-      <div class="footer-content">
-        <div class="footer-section contact">
-          <h4>Contact Us</h4>
-          <p>Email: Echeloninternationaledu@gmail.com</p>
-          <p>Phone: +86 137 3206 0600</p>
-        </div>
-        <div class="footer-section links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./faq.html">FAQ</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./contact.html">Detailed Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-section social">
-          <h4>Follow Us</h4>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
+    <div class="pricing-cards ">
+      <!-- Self Sponsoring -->
+      <div class="pricing-card highlight">
+        <h3>Self-Sponsoring</h3>
+        <p class="price">$350 <span class="billing">total</span></p>
+        <p class="note">Initial payment: $200<br>Balance after admission: $150</p>
+
+        <ul class="features">
+          <li>University Application Support</li>
+          <li>Visa Guidance & Consultation</li>
+          <li>Document Review</li>
+          <li>Free China Relocation Briefing</li>
+        </ul>
+
+        <a href="#contact" class="cta-button">Apply Now</a>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Echelon International Education. All rights reserved.</p>
+
+      <!-- Scholarship Application -->
+      <div class="pricing-card">
+        <h3>Scholarship Application</h3>
+        <p class="price">$1000 <span class="billing">total</span></p>
+        <p class="note">Initial payment: $250<br>Balance after admission: $750</p>
+
+        <ul class="features">
+          <li>Scholarship Matching</li>
+          <li>Significant Stipend & Tuition Exemption</li>
+          <li>Medical Insurance Assistance</li>
+          <li>Accommodation Matching</li>
+        </ul>
+
+        <a href="#contact" class="cta-button">Apply with Scholarship</a>
       </div>
-    </footer>
-    <script src="./app.js" defer></script>
-  </body>
+    </div>
+  </section>
+
+
+  <hr class="divider" />
+  <section id="testimonials" class="section gallery-section ">
+    <h2>Testimonials</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial active">
+        <p>
+          "Echelon transformed my admission experience. Their dedicated
+          support secured my place at a top university."
+        </p>
+        <cite>– Sarah K., University of Toronto</cite>
+      </div>
+      <div class="testimonial">
+        <p>
+          "From test prep to visa guidance, they supported me at every step!
+          Highly recommended."
+        </p>
+        <cite>– Raj P., University of Sydney</cite>
+      </div>
+      <div class="testimonial">
+        <p>
+          "I got into my dream school with a scholarship, thanks to the
+          Echelon team!"
+        </p>
+        <cite>– Amina L., University of British Columbia</cite>
+      </div>
+      <button id="prev">❮</button>
+      <button id="next">❯</button>
+    </div>
+  </section>
+
+  <hr class="divider" />
+  <section id="gallery" class="section">
+    <h1 style="font-size: 2.5rem;
+    margin-bottom: 50px;">Gallery</h1>
+    <div class="gallery-intro">
+      <p>The visual journey of top Chinese universities, from classic architecture to modern innovation.</p>
+      <a href="#gallery" class="follow-btn">Explore More</a>
+    </div>
+
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="./images/tsinghua.jpg" alt="Tsinghua University" />
+        <div class="caption">
+          Tsinghua University – Beijing
+          <span>Engineering & Innovation Hub</span>
+        </div>
+        <div class="tag">Architecture</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="./images/fudan.jpeg" alt="Fudan University" />
+        <div class="caption">
+          Fudan University – Shanghai
+          <span>Global Research Excellence</span>
+        </div>
+        <div class="tag">Art</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="./images/suzhou-campus.jpeg" alt="XJTLU" />
+        <div class="caption">
+          XJTLU – Suzhou
+          <span>Modern Campus with UK-China Programs</span>
+        </div>
+        <div class="tag">Trending</div>
+      </div>
+    </div>
+  </section>
+
+
+  <hr class="divider" />
+  <section id="faq" class="section faq-page">
+    <h1>Frequently asked questions</h1>
+    <p class="subtitle">Have questions? We're here to help.</p>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search" />
+    </div>
+
+    <div id="faqList" class="faq-list"></div>
+
+    <div class="footer-contact">
+
+      <h4>Still have questions?</h4>
+      <p>Can’t find the answer you’re looking for? Please <a href="./index.html#contact">contact us</a>.</p>
+    </div>
+
+  </section>
+
+  <hr class="divider" />
+  <section id="contact" class="section final-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- OR Divider -->
+    <div class="c-divider">
+      <span>OR</span>
+    </div>
+
+
+
+    <!-- WhatsApp Contact Cards -->
+    <div class="whatsapp-contact-section">
+      <h3>Reach Us Directly on WhatsApp</h3>
+      <div class="whatsapp-cards-flex">
+
+        <!-- Laura Card -->
+        <div class="whatsapp-profile-card">
+          <div class="profile-img">
+            <img src="images/laura.jpg" alt="Laura">
+            <span class="status-dot"></span>
+          </div>
+          <h4>Laura</h4>
+          <p>Admissions Advisor</p>
+          <div class="tooltip-wrapper">
+            <a href="https://wa.me/8619564144344" target="_blank" class="whatsapp-btn">
+              Message on WhatsApp
+            </a>
+            <span class="custom-tooltip">We are currently offline. Please try during working hours.</span>
+          </div>
+        </div>
+
+        <!-- Adu Card -->
+        <div class="whatsapp-profile-card">
+          <div class="profile-img">
+            <img src="images/adu.jpg" alt="Adu">
+            <span class="status-dot"></span>
+          </div>
+          <h4>Adu</h4>
+          <p>Admissions Advisor</p>
+          <div class="tooltip-wrapper">
+            <a href="https://wa.me/8613732060600" target="_blank" class="whatsapp-btn">
+              Message on WhatsApp
+            </a>
+            <span class="custom-tooltip">We are currently offline. Please try during working hours.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Operating Hours -->
+    <div class="hours-info">
+      <h3>Operating Hours</h3>
+      <ul>
+        <li>Monday – Thursday: 9 a.m. – 6 p.m.</li>
+        <li>Friday: 9 a.m. – 2 p.m.</li>
+        <li>Saturday: Closed</li>
+        <li>Sunday: 9 a.m. – 12 p.m.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <p>Email: Echeloninternationaledu@gmail.com</p>
+        <p>Phone: +86 137 3206 0600</p>
+      </div>
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Echelon International Education. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="./app.js" defer></script>
+</body>
+
 </html>

@@ -1,0 +1,53 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQs – Echelon International Education</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">Echelon</div>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation"
+          >
+            <div class="hamburger-bars">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+  <section class="faq-page">
+    <h1>Frequently asked questions</h1>
+    <p class="subtitle">Have questions? We're here to help.</p>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search" />
+    </div>
+
+    <div id="faqList" class="faq-list"></div>
+
+    <div class="footer-contact">
+    
+      <h4>Still have questions?</h4>
+      <p>Can’t find the answer you’re looking for? Please <a href="../../index.html#contact">contact us</a>.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
