@@ -202,50 +202,54 @@ const g_observer = new IntersectionObserver(
 
 galleryItems.forEach((item) => g_observer.observe(item));
 
-function isWithinOperatingHours() {
-  const now = new Date();
-  const day = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
-  const hour = now.getHours();
+  
 
-  switch (day) {
-    case 0: // Sunday
-      return hour >= 9 && hour < 12;
-    case 1: // Monday
-    case 2: // Tuesday
-    case 3: // Wednesday
-    case 4: // Thursday
-      return hour >= 9 && hour < 18;
-    case 5: // Friday
-      return hour >= 9 && hour < 14;
-    case 6: // Saturday
-      return false;
-    default:
-      return false;
+  (function(){
+    emailjs.init("eqfaaN4jHgdNRqilI"); 
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const feedbackLabel = document.getElementById('formFeedback');
+  const name = this.user_name.value.trim();
+  const email = this.user_email.value.trim();
+  const message = this.user_message.value.trim();
+
+  feedbackLabel.textContent = '';
+  feedbackLabel.style.color = '';
+
+  // Basic validation
+  if (!name || !email || !message) {
+    feedbackLabel.textContent = '⚠️ Please fill in all fields.';
+    feedbackLabel.style.color = 'red';
+    return;
   }
-}
 
-window.addEventListener('DOMContentLoaded', () => {
-    const isActive = isWithinOperatingHours();
-    const buttons = document.querySelectorAll('.whatsapp-btn');
-  
-    buttons.forEach(btn => {
-      const wrapper = btn.closest('.tooltip-wrapper');
-      const tooltip = wrapper?.querySelector('.custom-tooltip');
-  
-      if (!isActive) {
-        btn.classList.add('disabled');
-        btn.href = 'javascript:void(0)';
-        btn.style.opacity = '0.5';
-        btn.style.pointerEvents = 'none';
-  
-        if (tooltip) {
-          tooltip.style.display = 'block';
-        }
-      } else {
-        if (tooltip) {
-          tooltip.remove(); // remove tooltip if it's working hours
-        }
-      }
-    });
+  if (!validateEmail(email)) {
+    feedbackLabel.textContent = '⚠️ Please enter a valid email address.';
+    feedbackLabel.style.color = 'red';
+    return;
+  }
+
+  // Sending feedback
+  feedbackLabel.textContent = 'Sending message...';
+  feedbackLabel.style.color = '#007bff';
+
+    emailjs.sendForm('service_u3xk96d', 'template_367rriq', this)
+      .then(() => {
+        feedbackLabel.textContent = '✅ Your message was sent successfully!';
+      feedbackLabel.style.color = 'green';
+      this.reset();
+      }, (error) => {
+        console.error('EmailJS Error:', error);
+        feedbackLabel.textContent = '❌ Oops! Message failed. Please try again later.';
+        feedbackLabel.style.color = 'red';
+      });
   });
-  
+
+  function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
