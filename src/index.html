@@ -17,7 +17,7 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">Echelon</div>
+      <div class="logo"><div class="logo-container"><img src="./images/logo.png" alt="logo"/></div><p>EIE</p></div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <div class="hamburger-bars">
           <span class="bar"></span>
@@ -93,44 +93,11 @@
     </div>
   </section>
   <hr class="divider" />
-      <!-- <h2>Our Services</h2>
-      <div class="services-container">
-        <div class="service-item">
-          <i class="fa-solid fa-graduation-cap fa-2x"></i>
-          <h3>Admissions Counseling</h3>
-          <p>Personalized guidance to choose ideal universities and courses.</p>
-        </div>
-
-        <div class="service-item">
-          <i class="fa-solid fa-file-lines fa-2x"></i>
-          <h3>Application Assistance</h3>
-          <p>
-            Complete support in preparing compelling applications and essays.
-          </p>
-        </div>
-
-        <div class="service-item">
-          <i class="fa-solid fa-passport fa-2x"></i>
-          <h3>Visa Guidance</h3>
-          <p>Simplified and stress-free visa application processes.</p>
-        </div>
-
-        <div class="service-item">
-          <i class="fa-solid fa-medal fa-2x"></i>
-          <h3>Scholarship Matching</h3>
-          <p>Proven strategies to secure scholarships and financial aid.</p>
-        </div>
-      </div>
-    </section> -->
 
   <section id="services" class="section pricing-section">
     <h2 class="section-title">Application Options</h2>
     <p class="section-subtitle">Choose your preferred route to apply for Chinese universities.</p>
 
-    <div class="pricing-toggle">
-      <button class="active">Self-Sponsoring</button>
-      <button>Scholarship Application</button>
-    </div>
 
 
     <div class="pricing-cards ">
@@ -152,19 +119,13 @@
       </div>
 
       <!-- Scholarship Application -->
-      <div class="pricing-card">
+      <div class="pricing-card highlight">
         <h3>Scholarship Application</h3>
         <p class="price"><span class="billing">from</span> $1000</p>
-        <p class="note">Initial payment: $300<br>Balance after admission: from $750</p>
+        <p class="note">Initial payment: $300<br>Tiered pricing capped at $1200<br> <b>N.B</b> Fee is according to scholarship coverage</p>
 
-        <p class="billing">EVERYTHING IN SELF-SPONSORING</p>
-        <ul class="features">
-          <li>University Application Support</li>
-          <li>Visa Guidance & Consultation</li>
-          <li>Document Review</li>
-          <li>Free China Relocation Briefing</li>
-        </ul>
-        <p class="billing">PLUS </p>
+        <p style="color:rgb(90, 166, 236)">EVERYTHING IN SELF-SPONSORING</p>
+        <p style="text-align: center; margin: 20px 0; font-size: 1.2rem">+ PLUS</p>
         <ul class="features">
           <li>Scholarship Matching</li>
           <li>Significant Stipend & Tuition Exemption</li>
@@ -178,7 +139,7 @@
 
 
   <hr class="divider" />
-  <section id="testimonials" class="section gallery-section ">
+ <!--  <section id="testimonials" class="section gallery-section ">
     <h2>Testimonials</h2>
     <div class="testimonial-carousel">
       <div class="testimonial active">
@@ -205,10 +166,24 @@
       <button id="prev">❮</button>
       <button id="next">❯</button>
     </div>
-  </section>
+  </section> -->
+
+  <section id="testimonials" aria-label="Client feedback">
+    <div class="stage">
+    <h1>What our clients say</h1>
+    
+    
+    <div class="carousel" id="t-carousel" aria-live="polite">
+
+    <button class="arrow" id="t-prev" aria-label="Previous testimonial" title="Previous" type="button">◀</button>
+    <button class="arrow" id="t-next" aria-label="Next testimonial" title="Next" type="button">▶</button>
+    <div class="dots" id="t-dots" role="tablist" aria-label="Testimonials"></div>
+    </div>
+    </div>
+    </section>
 
   <hr class="divider" />
-  <section id="gallery" class="section">
+ <!--  <section id="gallery" class="section">
     <h1 style="font-size: 2.5rem;
     margin-bottom: 50px;">Gallery</h1>
     <div class="gallery-intro">
@@ -244,7 +219,8 @@
         <div class="tag">Trending</div>
       </div>
     </div>
-  </section>
+  </section> -->
+
 
 
   <hr class="divider" />
@@ -264,7 +240,29 @@
       <p>Can’t find the answer you’re looking for? Please <a href="./index.html#contact">contact us</a>.</p>
     </div>
 
+
+    <section class="emblem-marquee" data-speed="80" data-size="120" data-gap="28">
+      <h2>Featured University Partners</h2>
+        <div class="emblem-marquee__viewport" aria-label="University emblems scrolling from left to right">
+        <div class="emblem-marquee__track">
+        <!-- Replace these with your own images/alt text -->
+        <figure class="emblem-marquee__tile"><img src="./images/university-emblems-split/emblem_01.png" alt="Wuhan University emblem"></figure>
+        <figure class="emblem-marquee__tile"><img src="./images/university-emblems-split/emblem_02.png" alt="Nantong University emblem"></figure>
+        <figure class="emblem-marquee__tile"><img src="./images/university-emblems-split/emblem_03.png" alt="Gannan Normal University emblem"></figure>
+        <figure class="emblem-marquee__tile"><img src="./images/university-emblems-split/emblem_04.png" alt="Anhui University emblem"></figure>
+        <figure class="emblem-marquee__tile"><img src="./images/university-emblems-split/emblem_05.png" alt="Wenzhou Medical University emblem"></figure>
+        <figure class="emblem-marquee__tile"><img src="./images/university-emblems-split/emblem_06.png" alt="Ningbo University of Technology emblem"></figure>
+        <figure class="emblem-marquee__tile"><img src="./images/university-emblems-split/emblem_07.png" alt="Liaoning Petrochemical University emblem"></figure>
+        <figure class="emblem-marquee__tile"><img src="./images/university-emblems-split/emblem_08.png" alt="Xuzhou Medical University emblem"></figure>
+        <figure class="emblem-marquee__tile"><img src="./images/university-emblems-split/emblem_09.png" alt="Changchun University of Technology emblem"></figure>
+        </div>
+        </div>
+      </section>
+
   </section>
+
+  <hr class="divider" />
+
 
   <hr class="divider" />
   <section id="contact" class="section final-section">
@@ -310,7 +308,37 @@
     
   </section>
 
+  <button id="scrollTop" type="button" title="Scroll to top">
+    <span class="tooltip" id="scrollTopTip" role="tooltip">Scroll to top</span>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M12 4l-7.5 7.5a1 1 0 0 0 1.4 1.4L11 8.3V20a1 1 0 0 0 2 0V8.3l5.1 4.6a1 1 0 1 0 1.4-1.4L12 4z" fill="black"/>
+    </svg>
+  </button>
+
+   <!-- Modal -->
+   <div id="cta-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Close dialog">×</button>
+      <h3 id="modal-title">How would you like to continue?</h3>
+      <p id="modal-plan" class="modal-subtitle"></p>
+      <div class="modal-actions">
+        <a id="email-link" class="action-btn email-btn" href="#">Email us</a>
+        <a id="whatsapp-link" class="action-btn whatsapp-btn" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="modal-note">We’ll pre‑fill a message with your selected option.</p>
+    </div>
+  </div>
+
+
+
   <footer>
+    <div class="logo">
+      <div class="logo-container">
+        <img src="./images/main logo.png" />
+      </div>
+      
+    </div>
     <div class="footer-content">
       <div class="footer-section contact">
         <h4>Contact Us</h4>
@@ -328,8 +356,8 @@
       </div>
       <div class="footer-section social">
         <h4>Follow Us</h4>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1972NxT5wn/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/echeloneducation.cn?igsh=bDhlNWppZnJnYWNm"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
     <div class="footer-bottom">
