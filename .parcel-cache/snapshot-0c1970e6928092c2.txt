@@ -46,7 +46,7 @@
 64/home/rex/Documents/Projects/Echelon/dist/emblem_05.3dedf14d.jpg1758996865192448727 0
 64/home/rex/Documents/Projects/Echelon/dist/emblem_02.70ec4a0c.png1758995871946813869 0
 64/home/rex/Documents/Projects/Echelon/dist/about.a771a04d.css.map1750623366424496263 0
-66/home/rex/Documents/Projects/Echelon/dist/Echelon.2cdaf7bc.css.map1758996865229450358 0
+66/home/rex/Documents/Projects/Echelon/dist/Echelon.2cdaf7bc.css.map1758997408498110750 0
 68/home/rex/Documents/Projects/Echelon/dist/fa-brands-400.08e32ef5.ttf1750350338351972239 0
 64/home/rex/Documents/Projects/Echelon/dist/emblem_05.9dd38518.png1758995871953814175 0
 66/home/rex/Documents/Projects/Echelon/dist/Echelon.61abfec4.css.map1750350338441978403 0
@@ -1904,7 +1904,7 @@
 86/home/rex/Documents/Projects/Echelon/node_modules/caniuse-lite/data/features/dialog.js1750009171108272619 0
 108/home/rex/Documents/Projects/Echelon/node_modules/@fortawesome/fontawesome-free/svgs/brands/square-vimeo.svg1750269209966495799 0
 81/home/rex/Documents/Projects/Echelon/node_modules/caniuse-lite/data/regions/OM.js1750009172605342033 0
-50/home/rex/Documents/Projects/Echelon/src/style.css1758995796447519801 0
+50/home/rex/Documents/Projects/Echelon/src/style.css1758997390987232203 0
 107/home/rex/Documents/Projects/Echelon/node_modules/@fortawesome/fontawesome-free/svgs/solid/chart-column.svg1750269208875449951 0
 79/home/rex/Documents/Projects/Echelon/node_modules/@parcel/watcher/index.js.flow1750009169122180518 0
 100/home/rex/Documents/Projects/Echelon/node_modules/caniuse-lite/data/features/alternate-stylesheet.js1750009169157182142 0
@@ -2071,7 +2071,7 @@
 101/home/rex/Documents/Projects/Echelon/node_modules/caniuse-lite/data/features/contentsecuritypolicy.js1750009170166228936 0
 70/home/rex/Documents/Projects/Echelon/node_modules/json5/lib/require.js1750009168812166141 0
 114/home/rex/Documents/Projects/Echelon/node_modules/@fortawesome/fontawesome-free/svgs/solid/person-circle-minus.svg1750269209647482394 0
-41/home/rex/Documents/Projects/Echelon/dist1758996865243450974 1
+41/home/rex/Documents/Projects/Echelon/dist1758997408499110766 1
 81/home/rex/Documents/Projects/Echelon/node_modules/caniuse-lite/data/regions/GW.js1750009171548293022 0
 74/home/rex/Documents/Projects/Echelon/node_modules/@parcel/resolver-default1750009170736255369 1
 126/home/rex/Documents/Projects/Echelon/node_modules/@parcel/source-map/parcel_sourcemap_node/artifacts/index.win32-x64-msvc.node1750009171304281708 0
@@ -5246,7 +5246,7 @@
 78/home/rex/Documents/Projects/Echelon/node_modules/postcss-value-parser/LICENSE1750009168153135576 0
 105/home/rex/Documents/Projects/Echelon/node_modules/@fortawesome/fontawesome-free/svgs/solid/genderless.svg1750269209283467098 0
 105/home/rex/Documents/Projects/Echelon/node_modules/@fortawesome/fontawesome-free/svgs/solid/flask-vial.svg1750269209229464828 0
-62/home/rex/Documents/Projects/Echelon/dist/Echelon.2cdaf7bc.css1758996865191448683 0
+62/home/rex/Documents/Projects/Echelon/dist/Echelon.2cdaf7bc.css1758997408485110534 0
 98/home/rex/Documents/Projects/Echelon/node_modules/@swc/helpers/cjs/_class_apply_descriptor_get.cjs1750009168978173840 0
 108/home/rex/Documents/Projects/Echelon/node_modules/@fortawesome/fontawesome-free/svgs/solid/boxes-stacked.svg1750269208750444697 0
 83/home/rex/Documents/Projects/Echelon/node_modules/postcss-value-parser/lib/parse.js1750009168241139658 0
