@@ -6,6 +6,10 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --dist-dir dist"
   },
+  "htmlnano": {
+    "removeOptionalTags": false,
+    "collpseWhitespace": "conservative"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
