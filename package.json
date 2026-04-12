@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --dist-dir dist"
+     "build": "parcel build src/index.html && cp google812a5c8e06e7aca6.html dist/"
   },
   "htmlnano": {
     "removeOptionalTags": false,
